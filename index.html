@@ -8,20 +8,41 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"/>
     <title>GAO</title>
 </head>
 <body>
-    <header>
-        <h1>Esto es un header</h1>
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Esto es un header</h1>
+        </div>
     </header>
-    <div>
-        <h2>Esto es un div</h2>
-        <p>Este es el super gestor de alien omnitrix</p>
+
+    <div class="container">
+        <div class="row">
+            <h2>Esto es un div</h2>
+            <p>Este es el super gestor de alien omnitrix</p>
+        </div>
     </div>
-    <footer>
-        <h2>Esto es un footer</h2>
-        <p>@Copyright 2023, Universidad Nacional de Colombia</p>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h4>Desarrollado por el Equipo 9</h4>
+                    <ul class="list-unstyled">
+                        <li>Anderson Elian Gutierrez Bueno</li>
+                        <li>David Antonio Aristizabal Giraldo</li>
+                        <li>Juan Pablo Buitrago Diaz</li>
+                        <li>Julian Esteban Fernandez Montoya</li>
+                    </ul>
+                    <p>@ Copyright 2023, Universidad Nacional de Colombia</p>
+                </div>
+                
+            </div>
+        </div>
     </footer>
+
     <!-- jQuery primero, luego Popper.js, luego Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
