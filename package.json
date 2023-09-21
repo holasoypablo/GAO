@@ -2,7 +2,7 @@
   "name": "gao",
   "version": "1.0.0",
   "description": "Gestor Alien Omnitrix",
-  "main": "home.html",
+  "main": "index.html",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
