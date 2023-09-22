@@ -8,10 +8,11 @@ const routes: Routes = [
       import('./security/security.module').then((module) => module.SecurityModule)
   },
   {
-    path: 'home',
+    path: 'gao',
     loadChildren: () =>
       import('./modules/modules.module').then((module) => module.ModulesModule)
-  }
+  },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

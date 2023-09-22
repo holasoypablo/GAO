@@ -14,7 +14,7 @@ export class SigninComponent {
 
   login(): void {
     console.log('se hizo login');
-    this.router.navigate(['home']);
+    this.router.navigate(['gao']);
   }
 
 }
