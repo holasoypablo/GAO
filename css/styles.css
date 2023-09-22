@@ -3,23 +3,15 @@
     color: #FBFBFD;
 }
 
-.jumbotron {
-    background: #222222;
-    color: #FBFBFD;
-    margin: 0px auto;
-    padding: 30px 30px 30px 30px;
-}
-
 .a-mail {
     color: #FBFBFD;
 }
 
-.div-header1{
-    background-color: red;
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
 }
-.div-header2 {
-    background-color: blue;
-}
-.div-header3 {
-    background-color: yellow;
+
+.navbar-dark {
+  background-color: #512DA8;
 }
