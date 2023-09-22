@@ -6,8 +6,20 @@
 .jumbotron {
     background: #222222;
     color: #FBFBFD;
+    margin: 0px auto;
+    padding: 30px 30px 30px 30px;
 }
 
 .a-mail {
     color: #FBFBFD;
+}
+
+.div-header1{
+    background-color: red;
+}
+.div-header2 {
+    background-color: blue;
+}
+.div-header3 {
+    background-color: yellow;
 }
