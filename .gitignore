@@ -2,7 +2,7 @@
 
 /.vs/
 /.vscode/
-/package.json
+package.json
 
 # Compiled output
 /dist
