@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 html,
 body {
+    height: 100%;
+    margin: 0;
     background-color: #222222;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    color: #64CC4F;
 }
