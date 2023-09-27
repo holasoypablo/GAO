@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags siempre vienen primero -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>GAO</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="./index.html"><img src="img/logo.png" height="60" width="60" /></a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Omnitrix</a></li>
+          <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Aliens</a></li>
+          <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Iniciar Sesion</a></li>
+          <li class="nav-item active"><a class="btn border-success nav-link ml-2" href="#">Registro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="card bg-dark border-light">
+          <h5 class="card-header border-light text-white text-center">Registro</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12 mt-4">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input type="email" class="form-control" id="emailconf" name="emailconf" placeholder="Confirmar Email" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12 mt-4">
+                  <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input type="password" class="form-control" id="contrasenaconf" name="contrasenaconf" placeholder="Confirmar Contraseña" />
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 align-self-center mb-4 mt-3">
+        <img src="img/snare-oh.png" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-footer justify-content-center">
+        <div class="col-12 col-md-11 col-lg-9 col-xl-7">
+          <div class="card bg-transparent border-light">
+            <h6 class="card-header border-light text-white text-center">Equipo 9</h6>
+            <div class="card-body text-white">
+              <dl class="row">
+                <dt class="col-6">Anderson Elian Gutierrez Bueno</dt>
+                <dd class="col-6"><a class="a-mail" href="mailto:angutierrezb@unal.edu.co">angutierrezb@unal.edu.co</a></dd>
+                <dt class="col-6">David Antonio Aristizabal Giraldo</dt>
+                <dd class="col-6"><a class="a-mail" href="mailto:daaristizabalg@unal.edu.co">daaristizabalg@unal.edu.co</a></dd>
+                <dt class="col-6">Juan Pablo Buitrago Diaz</dt>
+                <dd class="col-6"><a class="a-mail" href="mailto:jubuitrago@unal.edu.co">jubuitrago@unal.edu.co</a></dd>
+                <dt class="col-6">Julian Esteban Fernandez Montoya</dt>
+                <dd class="col-6"><a class="a-mail" href="mailto:jfernandezmo@unal.edu.co">jfernandezmo@unal.edu.co</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p>@ Copyright 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery primero, luego Popper.js, luego Bootstrap JS. -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

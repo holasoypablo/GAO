@@ -23,3 +23,12 @@ body {
   padding: 15px 0px 15px 0px;
 }
 
+.bg-dark {
+  background-color: #171d22;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  min-height: 600px;
+}
