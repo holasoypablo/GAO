@@ -22,8 +22,8 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Omnitrix</a></li>
           <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Aliens</a></li>
-          <li class="nav-item active"><a class="btn nav-link ml-2" href="./login.html">Iniciar Sesion</a></li>
-          <li class="nav-item active"><a class="btn border-success nav-link ml-2" href="#">Registro</a></li>
+          <li class="nav-item active"><a class="btn border-success nav-link ml-2" href="#">Iniciar Sesion</a></li>
+          <li class="nav-item active"><a class="btn nav-link ml-2" href="./register.html">Registro</a></li>
         </ul>
       </div>
     </div>
@@ -31,47 +31,37 @@
 
   <div class="container">
     <div class="row row-content align-items-center">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 align-self-center order-last order-md-first">
+        <img src="img/ben10.png" class="img-fluid" />
+      </div>
+      <div class="col-12 col-md-6 mt-4">
         <div class="card bg-dark border-light">
-          <h5 class="card-header border-light text-white text-center">Registro</h5>
+          <h5 class="card-header border-light text-white text-center">Inicio de Sesion</h5>
           <div class="card-body">
             <form>
               <div class="form-group row">
-                <div class="col-12">
-                  <input type="text" class="form-control" id="nombre_register" name="nombre_register" placeholder="Nombre" />
+                <div class="col-12 mt-3">
+                  <input type="email" class="form-control" id="email_login" name="email_login" placeholder="Email" />
                 </div>
               </div>
               <div class="form-group row">
-                <div class="col-12 mt-4">
-                  <input type="email" class="form-control" id="email_register" name="email_register" placeholder="Email" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12">
-                  <input type="email" class="form-control" id="emailconf_register" name="emailconf_register" placeholder="Confirmar Email" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12 mt-4">
-                  <input type="password" class="form-control" id="contrasena_register" name="contrasena_register" placeholder="Contraseña" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12 mb-4">
-                  <input type="password" class="form-control" id="contrasenaconf_register" name="contrasenaconf_register" placeholder="Confirmar Contraseña" />
+                <div class="col-12 mt-3 mb-4">
+                  <input type="password" class="form-control" id="contrasena_login" name="contrasena_login" placeholder="Contraseña" />
                 </div>
               </div>
               <div class="form-group row justify-content-center">
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-success">Registrarse</button>
+                  <button type="submit" class="btn btn-success">Iniciar Sesion</button>
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <div class="col-auto">
+                  <a class="btn" href="#" style="color:white;">Recuperar Contraseña</a>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6 align-self-center mb-4 mt-3">
-        <img src="img/snare-oh.png" class="img-fluid" />
       </div>
     </div>
   </div>
