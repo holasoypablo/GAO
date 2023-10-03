@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 .footer {
   background-color: #293327;
   color: #fbfbfb;
@@ -37,4 +39,24 @@ body {
 
 .fixed-height-image {
   height: 300px; /* Cambia esta altura según tus necesidades */
+}
+
+.text-success {
+  font-family: 'Bangers', cursive;
+}
+
+.text-white {
+  font-family: 'Bangers';
+}
+
+.btn-success {
+  font-family: 'Bangers', cursive;
+}
+
+.btn {
+  font-family: 'Bangers', cursive;
+}
+
+.p {
+  font-family: 'Bangers', cursive;
 }
