@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Meta Tags siempre vienen primero -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Meta Tags siempre vienen primero -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>GAO</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>GAO</title>
 </head>
 <body>
   <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -17,26 +19,43 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="#"><img src="img/logo.png" height="60" width="60" /></a>
+      <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="./index.html"><img src="img/logo.png" height="60" width="60" /></a>
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Omnitrix</a></li>
           <li class="nav-item active"><a class="btn nav-link ml-2" href="./aliens.html">Aliens</a></li>
-          <li class="nav-item active"><a class="btn nav-link ml-2" href="./login.html">Iniciar Sesion</a></li>
-          <li class="nav-item active"><a class="btn nav-link ml-2" href="./register.html">Registro</a></li>
+          <li class="nav-item active"><a class="btn nav-link border-success ml-2" href="#">Cuenta</a></li>
+          <li class="nav-item active"><a class="btn nav-link ml-2" href="#"><span class="fa fa-sign-out fa-lg"></span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h4>Aqui va contenido</h4>
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="card bg-dark border-light">
+          <h4 class="card-header border-light text-success text-center">Mi Cuenta</h4>
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col-12 mb-3">
+                <h4 class="text-white">David (Ciudadano Comun)<a href="#" class="btn" style="color:white;"><span class="fa fa-edit fa-lg"></span></a></h4>
+              </div>
+              <div class="col-12 col-lg-8 mb-2 mx-auto">
+                <button class="btn btn-success btn-block">Cambiar contraseña</button>
+              </div>
+              <div class="col-12 col-lg-8 mx-auto">
+                <button class="btn btn-danger btn-block">Eliminar cuenta</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="img/omnitrix.png" class="img-fluid" />
       </div>
     </div>
   </div>
-
 
   <footer class="footer">
     <div class="container">
@@ -67,16 +86,9 @@
     </div>
   </footer>
 
-  <!-- jQuery primero, luego Popper.js, luego Bootstrap JS.
-      Librerias a instalar:
-      1. npm install lite-server --save-dev
-      2. npm install bootstrap@4.0.0 --save
-      3. npm install jquery@3.3.1 popper.js@1.12.9 --save
-      4. npm install font-awesome@4.7.0 --save
-  -->
+  <!-- jQuery primero, luego Popper.js, luego Bootstrap JS. -->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
