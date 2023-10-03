@@ -26,3 +26,15 @@ body {
   padding: 0px 0px 0px 0px;
   min-height: 600px;
 }
+
+.card img {
+  background-color: transparent; 
+}
+
+.card img.img-thumbnail {
+    border: none;
+}
+
+.fixed-height-image {
+  height: 300px; /* Cambia esta altura según tus necesidades */
+}
