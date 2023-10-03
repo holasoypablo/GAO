@@ -17,11 +17,11 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="#"><img src="img/logo.png" height="60" width="60" /></a>
+      <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="./index.html"><img src="img/logo.png" height="60" width="60" /></a>
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a class="btn nav-link ml-2" href="#">Omnitrix</a></li>
-          <li class="nav-item active"><a class="btn nav-link ml-2" href="./aliens.html">Aliens</a></li>
+          <li class="nav-item active"><a class="btn nav-link border-success ml-2" href="#">Aliens</a></li>
           <li class="nav-item active"><a class="btn nav-link ml-2" href="./login.html">Iniciar Sesion</a></li>
           <li class="nav-item active"><a class="btn nav-link ml-2" href="./register.html">Registro</a></li>
         </ul>
@@ -29,10 +29,32 @@
     </div>
   </nav>
 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-11 col-lg-9 col-xl-7">
+        <div class="card bg-dark border-light">
+          <div class="card-body">
+            <h5 class="text-white text-center mb-3">Busqueda</h5>
+            <form>
+              <div class="form-group row">
+                <div class="col-12 col-sm-8 col-md-6">
+                  <input type="text" class="form-control" id="nombreAlien" name="nombreAlien" placeholder="Ingresa el nombre del Alien" />
+                </div>
+                <div class="col-12 col-sm-4 col-md-2 mt-2 mt-sm-0">
+                  <button type="submit" class="btn btn-success btn-block">Buscar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="row row-footer justify-content-center">
-        <div class="col-12 col-md-11 col-lg-9 col-xl-7">
+        <div class="col-12 col-md-11 col-lg-9 col-xl-7 mt-4 mb-3">
           <div class="card bg-transparent border-light">
             <h6 class="card-header border-light text-white text-center">Equipo 9</h6>
             <div class="card-body text-white text-center">
