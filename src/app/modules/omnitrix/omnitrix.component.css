@@ -112,6 +112,14 @@
     transition: 0.5s;
 }
 
+.ring-border {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border: 8px solid black;
+    border-radius: 50%;
+}
+
 .ring {
     position: absolute;
     height: 150px;
