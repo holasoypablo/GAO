@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./omnitrix.component.css']
 })
 export class OmnitrixComponent {
+  showModal = false;
+  selectedAlien = 'Humungousaur';
 
+  aliens = [
+    'Heatblast',
+    'XLR8',
+    'Four Arms',
+    'Diamondhead',
+    // Agrega más aliens aquí
+  ];
+
+  changeAlien(newAlien: string) {
+    this.selectedAlien = newAlien;
+    this.showModal = false;
+  }
 }

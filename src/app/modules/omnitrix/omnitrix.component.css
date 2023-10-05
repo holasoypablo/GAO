@@ -1,0 +1,158 @@
+.omnitrix {
+    width: 350px;
+    height: 250px;
+    background-color: #3e4246;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1 {
+    width: 216px;
+    height: 216px;
+    background-color: #110f0f;
+    border-radius: 50%;
+    position: absolute;
+    border: 12px solid rgb(117, 108, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(179, 174, 174);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.external-button {
+    width: 22px;
+    height: 22px;
+    background-image: radial-gradient(circle, white, chartreuse);
+    border: 5px solid rgb(56, 56, 54);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.external-button:nth-child(1) {
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.external-button:nth-child(2) {
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.external-button:nth-child(3) {
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.external-button:nth-child(4) {
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ovel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+    border-radius: 50%;
+    position: absolute;
+    height: 140px;
+    width: 140px;
+
+}
+
+.l1
+{
+    position: absolute;
+    left: 88px;
+    background: #707070;
+    transform: rotate(45deg);
+    height: 60px;
+    width: 60px;
+    border-radius: 0 0 0 5px;
+    border: 12px solid #000;
+    border-top: none;
+    border-right: none;
+    transition: 0.5s;
+}
+#l2
+{
+    left: -7.5px;
+    transform: rotate(-135deg);
+}
+
+.rin
+{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    border: 20px solid #707070;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.ring-border {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border: 8px solid black;
+    border-radius: 50%;
+}
+
+.ring {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 12px solid rgb(179, 174, 174);;
+    border-radius: 50%;
+}
+
+.ring1 {
+    position: absolute;
+    height: 185px;
+    width: 185px;
+    border-radius: 50%;
+    border: 20px solid #110f0f;
+}
+
+.c2:hover .l1
+{
+    left: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: #0000;
+}
+.c2:hover #l2
+{
+    left: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: #0000;
+}
+
+.c2:hover .rin
+{
+    opacity: 1;
+    transition: 1s;
+}
