@@ -29,6 +29,12 @@ body {
   min-height: 600px;
 }
 
+.row-content-2 {
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  min-height: 450px;
+}
+
 .card img {
   background-color: transparent; 
 }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Meta Tags siempre vienen primero -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Meta Tags siempre vienen primero -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>GAO</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>GAO</title>
 </head>
 <body>
   <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -31,11 +32,62 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h4>Aqui va contenido</h4>
+      <div class="col-6 mt-3 mr-auto">
+        <h2 class="text-success">Aliens favoritos</h2>
+        <h6 class="text-white">Ver todos<a href="./aliens.html" class="btn" style="color:white;"><span class="fa fa-database fa-md"></span></a></h6>
+      </div>
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2 mt-3 ml-auto text-right">
+        <h5 class="text-white">Estado actual<a href="./aliens.html" class="btn" style="color:lawngreen;"><span class="fa fa-circle fa-md"></span></a></h5>
+        <select class="form-control bg-dark text-white">
+          <option>Fuego</option>
+          <option>Humano</option>
+        </select>
+      </div>
+    </div>
+    <div class="row justify-content-center row-content-2">
+      <div class="col-10 col-md-6 col-lg-4 mt-auto mb-3">
+        <div class="card bg-dark border-light text-center">
+          <div class="card-body">
+            <div class="media">
+              <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="img/heatblast.png" alt="four-arms" />
+            </div>
+            <h3 class="text-white mt-2"><a href="#" class="btn invisible" style="color:lawngreen;"><span class="fa fa-chevron-left fa-md"></span></a>Fuego<a href="#" class="btn invisible" style="color:lawngreen;"><span class="fa fa-chevron-right fa-md"></span></a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-6 col-lg-4 mt-auto mt-lg-0 mb-lg-auto mb-3 d-none d-lg-block">
+        <div class="card bg-dark border-light text-center">
+          <div class="card-body">
+            <div class="media">
+              <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="img/four-arms.png" alt="four-arms" />
+            </div>
+            <h3 class="text-white mt-2"><a href="#" class="btn" style="color:lawngreen;"><span class="fa fa-chevron-left fa-md"></span></a> Cuatro Brazos <a href="#" class="btn" style="color:lawngreen;"><span class="fa fa-chevron-right fa-md"></span></a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-6 col-lg-4 mt-auto mt-lg-0 mb-lg-auto mb-3 d-block d-lg-none">
+        <div class="card bg-dark border-light text-center">
+          <div class="card-body">
+            <div class="media">
+              <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="img/four-arms.png" alt="four-arms" />
+            </div>
+            <h3 class="text-white mt-2"><a href="#" class="btn invisible" style="color:lawngreen;"><span class="fa fa-chevron-left fa-md"></span></a> Cuatro Brazos <a href="#" class="btn invisible" style="color:lawngreen;"><span class="fa fa-chevron-right fa-md"></span></a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-6 col-lg-4 mt-auto mb-3 d-none d-lg-block">
+        <div class="card bg-dark border-light text-center">
+          <div class="card-body">
+            <div class="media">
+              <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="img/diamond-head.png" alt="four-arms" />
+            </div>
+            <h3 class="text-white mt-2"> Diamante </h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 
 
   <footer class="footer">
