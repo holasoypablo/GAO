@@ -8,6 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css" />
   <title>GAO</title>
 </head>
@@ -20,65 +21,54 @@
       <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="./index.html"><img src="img/logo.png" height="60" width="60" /></a>
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="btn nav-link ml-2" href="./omnitrix.html">Omnitrix</a></li>
+          <li class="nav-item active"><a class="btn nav-link border-success ml-2" href="#">Omnitrix</a></li>
           <li class="nav-item active"><a class="btn nav-link ml-2" href="./aliens.html">Aliens</a></li>
           <li class="nav-item active"><a class="btn nav-link ml-2" href="./login.html">Iniciar Sesion</a></li>
-          <li class="nav-item active"><a class="btn border-success nav-link ml-2" href="#">Registro</a></li>
+          <li class="nav-item active"><a class="btn nav-link ml-2" href="./register.html">Registro</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-3 mx-auto text-center">
+        <h2 class="text-white">Estado actual<a href="./aliens.html" class="btn" style="color:lawngreen;"><span class="fa fa-circle fa-md"></span></a></h2>
+        <select class="form-control bg-dark text-white">
+          <option>Fuego</option>
+          <option>Humano</option>
+        </select>
+      </div>
+    </div>
     <div class="row row-content align-items-center">
-      <div class="col-12 col-md-6">
-        <div class="card bg-dark border-light">
-          <h4 class="card-header border-light text-white text-center">Registro</h4>
-          <div class="card-body">
-            <form>
-              <div class="form-group row">
-                <div class="col-12">
-                  <input type="text" class="form-control" id="nombre_register" name="nombre_register" placeholder="Nombre" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12 mt-4">
-                  <input type="email" class="form-control" id="email_register" name="email_register" placeholder="Email" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12">
-                  <input type="email" class="form-control" id="emailconf_register" name="emailconf_register" placeholder="Confirmar Email" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12 mt-4">
-                  <input type="password" class="form-control" id="contrasena_register" name="contrasena_register" placeholder="Contraseña" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-12 mb-4">
-                  <input type="password" class="form-control" id="contrasenaconf_register" name="contrasenaconf_register" placeholder="Confirmar Contraseña" />
-                </div>
-              </div>
-              <div class="form-group row justify-content-center">
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-success">Registrarse</button>
-                </div>
-              </div>
-            </form>
+      <div class="col-12 col-md-5">
+        <img src="img/heatblast.png" class="img-fluid" />
+      </div>
+      <div class="col-12 col-md-7 mt-3 mb-3">
+        <div class="row">
+          <div class="col-7 mx-auto">
+
+
+
+
+            <!--                                                AQUI VA EL OMNITRIX                             -->
+
+
+
+
+          </div>
+          <div class="col-12 text-center">
+            <h2 class="text-white">Transformacion finaliza en:</h2>
+            <h4 class="text-success">20 minutos<br />30 segundos</h4>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6 align-self-center mb-4 mt-3">
-        <img src="img/snare-oh.png" class="img-fluid" />
       </div>
     </div>
   </div>
 
   <footer class="footer">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row row-footer justify-content-center">
         <div class="col-12 col-md-11 col-lg-9 col-xl-7 mt-4 mb-3">
           <div class="card bg-transparent border-light">
             <h6 class="card-header border-light text-white text-center">Equipo 9</h6>
@@ -109,6 +99,5 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 </html>
