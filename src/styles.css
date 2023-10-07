@@ -8,11 +8,28 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #222222;
     color: #FFFFFF;
+}
+.card img {
+    background-color: transparent;
+}
+.card img.img-thumbnail {
+    border: none;
+    height: 300px;
+}
+.footer {
+    background-color: #293327;
+    color: #fbfbfb;
+  }
+.font-ben{
+    font-family: 'Bangers', cursive;
+}
+.navbar-dark {
+    background-color: #293327;
 }
 
 h1 {
     font-family: 'Bangers', cursive;
     color: #64CC4F;
 }
+
