@@ -4,10 +4,11 @@ import { SecurityRoutingModule } from './security-routing.module';
 
 @NgModule({
     declarations: [
-        SigninComponent
+        SigninComponent,
     ],
     imports: [
         SecurityRoutingModule
+        
     ]
 })
 export class SecurityModule { }

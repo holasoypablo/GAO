@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SignupComponent } from './security/components/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/modules.module').then((module) => module.ModulesModule)
   },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' },
+  {path:'register', component: SignupComponent},
 ];
 
 @NgModule({
