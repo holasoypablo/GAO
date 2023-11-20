@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-* {
-    box-sizing: border-box;
+body {
+  padding: 86px 0px 0px 0px;
+  z-index: 0;
+  background-color: #222222 !important;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    color: #FFFFFF;
-}
 .card img {
     background-color: transparent;
 }
@@ -33,3 +29,54 @@ h1 {
     color: #64CC4F;
 }
 
+.a-mail {
+  color: #fbfbfb;
+}
+
+.bg-dark {
+  background-color: #171d22;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  min-height: 600px;
+}
+
+.row-content-2 {
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  min-height: 450px;
+}
+
+.card img {
+  background-color: transparent;
+}
+
+.card img.img-thumbnail {
+    border: none;
+}
+
+.fixed-height-image {
+  height: 300px;
+}
+
+.text-success {
+  font-family: 'Bangers',cursive;
+}
+
+.text-white {
+  font-family: 'Bangers',cursive;
+}
+
+.text-danger {
+  font-family: 'Bangers',cursive;
+}
+
+.btn-success {
+  font-family: 'Bangers',cursive;
+}
+
+.btn {
+  font-family: 'Bangers',cursive;
+}
