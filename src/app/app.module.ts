@@ -8,7 +8,7 @@ import { SecurityModule } from './security/security.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     SecurityModule,

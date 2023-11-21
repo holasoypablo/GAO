@@ -7,28 +7,30 @@
     <div class="card bg-dark border-light font-ben">
         <h4 class="card-header border-light text-white text-center ">Inicio de Sesion</h4>
         <div class="card-body">
-        <form>
-            <div class="form-group row">
-            <div class="col-12 mt-3">
-                <input type="email" class="form-control text-white" id="email_login" name="email_login" placeholder="Email" />
-            </div>
-            </div>
-            <div class="form-group row">
-            <div class="col-12 mt-3 mb-4">
-                <input type="password" class="form-control text-white" id="contrasena_login" name="contrasena_login" placeholder="Contraseña" />
-            </div>
-            </div>
-            <div class="form-group row justify-content-center">
-            <div class="col-auto">
-                <a href="account" class="btn btn-success">Iniciar Sesión</a>
-            </div>
-            </div>
-            <div class="form-group row justify-content-center">
-            <div class="col-auto">
-                <a class="btn" href="#" style="color:white;">Recuperar Contraseña</a>
-            </div>
-            </div>
-        </form>
+          <form>
+              <div class="form-group row">
+                <div class="col-12 mt-3">
+                    <input type="email" class="form-control text-black" id="email_login" name="email_login" placeholder="Email"
+                           required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12 mt-3 mb-4">
+                    <input type="password" class="form-control text-black" id="contrasena_login" name="contrasena_login" placeholder="Contraseña"
+                           required minlength="8"/>
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-success">Iniciar Sesion</button>
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <div class="col-auto">
+                    <a class="btn" href="#" style="color:white;">Recuperar Contraseña</a>
+                </div>
+              </div>
+          </form>
         </div>
     </div>
     </div>

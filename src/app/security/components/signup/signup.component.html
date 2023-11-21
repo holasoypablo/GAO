@@ -5,38 +5,42 @@
     <div class="card bg-dark border-light">
         <h4 class="card-header border-light text-white text-center">Registro</h4>
         <div class="card-body">
-        <form>
-            <div class="form-group row">
-            <div class="col-12">
-                <input type="text" class="form-control text-white" id="nombre_register" name="nombre_register" placeholder="Nombre" />
-            </div>
-            </div>
-            <div class="form-group row">
-            <div class="col-12 mt-4">
-                <input type="email" class="form-control text-white" id="email_register" name="email_register" placeholder="Email" />
-            </div>
-            </div>
-            <div class="form-group row">
-            <div class="col-12">
-                <input type="email" class="form-control text-white" id="emailconf_register" name="emailconf_register" placeholder="Confirmar Email" />
-            </div>
-            </div>
-            <div class="form-group row">
-            <div class="col-12 mt-4">
-                <input type="password" class="form-control text-white" id="contrasena_register" name="contrasena_register" placeholder="Contraseña" />
-            </div>
-            </div>
-            <div class="form-group row">
-            <div class="col-12 mb-4">
-                <input type="password" class="form-control text-white" id="contrasenaconf_register" name="contrasenaconf_register" placeholder="Confirmar Contraseña" />
-            </div>
-            </div>
-            <div class="form-group row justify-content-center">
-            <div class="col-auto">
-                <button type="submit" class="btn btn-success">Registrarse</button>
-            </div>
-            </div>
-        </form>
+
+          <form (submit)="onSubmit()">
+              <div class="form-group row">
+              <div class="col-12">
+                  <input type="text" class="form-control text-black" id="nombre_register" name="nombre_register" placeholder="Nombre" required/>
+              </div>
+              </div>
+              <div class="form-group row">
+              <div class="col-12 mt-4">
+                  <input type="email" class="form-control text-black" id="email_register" name="email_register" placeholder="Email"
+                         required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+              </div>
+              </div>
+              <div class="form-group row">
+              <div class="col-12">
+                  <input type="email" class="form-control text-black" id="emailconf_register" name="emailconf_register" placeholder="Confirmar Email"
+                         required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+              </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12 mt-4">
+                  <input type="password" class="form-control text-black" id="contrasena_register" name="contrasena_register" placeholder="Contraseña" required minlength="8" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12 mb-4">
+                  <input type="password" class="form-control text-black" id="contrasenaconf_register" name="contrasenaconf_register" placeholder="Confirmar Contraseña" required minlength="8" />
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+              <div class="col-auto">
+                  <button type="submit" class="btn btn-success">Registrarse</button>
+              </div>
+              </div>
+          </form>
+
         </div>
     </div>
     </div>
