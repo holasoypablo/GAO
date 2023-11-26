@@ -8,10 +8,6 @@ const routes: Routes = [
     {
         path: '',
         component: AliensListComponent
-    },
-    {
-        path: 'alien-detail/:id',
-        component: AlienDetailComponent
     }
 ];
 

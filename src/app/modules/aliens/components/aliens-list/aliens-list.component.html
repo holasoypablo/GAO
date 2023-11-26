@@ -39,111 +39,15 @@
         <h3 class="text-success">Conoce a todos los Aliens</h3>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="alien/cuatrobrazos">
+    <div class="row justify-content-center" >
+      <div *ngFor="let alien of aliens"  class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
+        <a href="alien/{{alien._id}}">
           <div class="card bg-dark border-light text-center">
             <div class="card-body">
               <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/four-arms.png" alt="four-arms" />
+                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="{{alien.image}}" />
               </div>
-              <h3 class="text-success">Cuatro Brazos</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/way-big.png" alt="way-big" />
-              </div>
-              <h3 class="text-success">Muy grande</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/cannonbolt.png" alt="cannonbolt" />
-              </div>
-              <h3 class="text-success">Cannonbolt</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center ">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/grey-matter.png" alt="grey-matter" />
-              </div>
-              <h3 class="text-success">Materia Gris</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/eye-guy.png" alt="eye-guy" />
-              </div>
-              <h3 class="text-success">Multiojos</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/diamond-head.png" alt="diamond-head" />
-              </div>
-              <h3 class="text-success">Diamante</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/Bestia.png" alt="bestia" />
-              </div>
-              <h3 class="text-success">Bestia</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-2">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/heatblast.png" alt="heatblast" />
-              </div>
-              <h3 class="text-success">Fuego</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-md-6 col-lg-4 mt-2 mb-4">
-        <a href="#">
-          <div class="card bg-dark border-light text-center">
-            <div class="card-body">
-              <div class="media">
-                <img class="d-flex mx-auto img-thumbnail align-self-center fixed-height-image" src="assets/img/Ditto.png" alt="ditto" />
-              </div>
-              <h3 class="text-success">Ditto</h3>
+              <h3 class="text-success">{{alien.name}}</h3>
             </div>
           </div>
         </a>

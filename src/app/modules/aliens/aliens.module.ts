@@ -3,6 +3,8 @@ import { AliensListComponent } from "./components/aliens-list/aliens-list.compon
 import { AlienDetailComponent } from "./components/alien-detail/alien-detail.component";
 import { AlienCommentsComponent } from "./components/alien-comments/alien-comments.component";
 import { AliensRoutingModule } from "./aliens-routing.module";
+import { CommonModule } from "@angular/common";
+import { BrowserModule } from "@angular/platform-browser";
 
 @NgModule({
     declarations: [
@@ -11,7 +13,10 @@ import { AliensRoutingModule } from "./aliens-routing.module";
         AlienCommentsComponent
     ],
     imports: [
-        AliensRoutingModule
+        AliensRoutingModule,
+        CommonModule,
+        BrowserModule
+    
     ]
 })
 
