@@ -5,11 +5,13 @@
         </button>
         <a class="navbar-brand mr-auto ml-3 ml-sm-0" href="home"><img src="assets/img/logo.png" height="60" width="60" /></a>
         <div class="collapse navbar-collapse" id="Navbar">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="btn nav-link ml-2" href="omnitrix-status">Omnitrix</a></li>
+        <ul class="navbar-nav w-100 d-flex">
+            <li class="nav-item active"><a class="btn nav-link ml-2" href="omnitrix">Omnitrix</a></li>
             <li class="nav-item active"><a class="btn nav-link ml-2" href="alien">Aliens</a></li>
-            <li class="nav-item active"><a class="btn nav-link ml-2" href="signin">Iniciar Sesion</a></li>
-            <li class="nav-item active"><a class="btn nav-link ml-2" href="signup">Registro</a></li>
+            <li *ngIf="!login" class="nav-item active"><a class="btn nav-link ml-2" href="signin">Iniciar Sesion</a></li>
+            <li *ngIf="!login" class="nav-item active"><a class="btn nav-link ml-2" href="signup">Registro</a></li>
+            <li *ngIf="login" class="nav-item active"><a class="btn nav-link ml-2" >Hola {{name}}</a></li>
+            <li *ngIf="login" (click)="logout()" class="nav-item active"><a class="btn nav-link ml-2" >Salir</a></li>
         </ul>
         </div>
     </div>

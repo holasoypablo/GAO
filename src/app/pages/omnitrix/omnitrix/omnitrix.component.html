@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-3 mx-auto text-center">
+        <h2 class="text-white">Estado actual<a href="./aliens.html" class="btn" style="color:lawngreen;"><span class="fa fa-circle fa-md"></span></a></h2>
+        <select *ngIf="isBen10" class="form-control bg-dark text-white">
+            <option *ngFor="let alien of aliens" [value]="alien._id">{{ alien.name }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-md-5">
+        <img src="assets/img/heatblast.png" class="img-fluid" />
+      </div>
+      <div class="col-12 col-md-7" style="margin-bottom: 30rem;">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="text-white">Transformacion finaliza en:</h2>
+            <h4 class="text-success">20 minutos<br />30 segundos</h4>
+          </div>
+          <div class="col-12 text-center">
+            <div class="omnitrix col-12">
+              <div class="c1 ">
+                <div class="external-button"></div>
+                <div class="external-button"></div>
+                <div class="external-button"></div>
+                <div class="external-button"></div>
+                <div class="c2">
+                  <div class="ovel">
+                    <div class="rin"></div>
+                    <div class="l1"></div>
+                    <div class="l1" id="l2"></div>
+                    <div class="ring-border"></div>
+                    <div class="ring"></div>
+                    <div class="ring1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

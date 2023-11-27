@@ -16,16 +16,17 @@ export class LoginComponent {
   login(): void {
     this.authService.login(this.username, this.password).subscribe(
       (response) => {
-        if (response.userId!=null) {
-          this.router.navigate(['/dashboard']);
-          console.log("Inicio bueno")
+        if (response) {
+          localStorage.setItem('email',this.username);
+          localStorage.setItem('password',this.password);
+          localStorage.setItem('name',response.name);
+          this.router.navigate(['/aliens']);
         } else {
-          console.log(response);
-          console.error('Inicio de sesión fallido.');
+          this.router.navigate(['/signin']);
         }
       },
       (error) => {
-        console.error('Error al intentar iniciar sesión:', error);
+        this.router.navigate(['/signin']);
       }
     );
   }

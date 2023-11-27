@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginComponent } from './login.component';
+import { OmnitrixComponent } from './omnitrix.component';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+describe('OmnitrixComponent', () => {
+  let component: OmnitrixComponent;
+  let fixture: ComponentFixture<OmnitrixComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LoginComponent]
+      declarations: [OmnitrixComponent]
     });
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(OmnitrixComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
