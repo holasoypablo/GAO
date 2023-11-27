@@ -13,19 +13,20 @@ export class AliensDetailComponent {
   constructor(
     private route: ActivatedRoute,
     private aliensService: AliensService,
-    private commentsService: CommentsService,
+    private commentsService: CommentsService
   ) {}
 
   alien: any;
   comments: Comment[] = [];
   newComment = '';
   id: string = '';
+  userName: string = '';
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id') || '';
 
-
     if (this.id !== null) {
+      this.userName = localStorage.getItem('name') || '';
       this.getAlien(this.id);
       this.getComments(this.id);
     } else {
@@ -36,7 +37,7 @@ export class AliensDetailComponent {
   getAlien(id: string) {
     this.aliensService.getAlien(id).subscribe(
       (data: any) => {
-        console.log(data)
+        console.log(data);
         this.alien = data;
       },
       (error) => {
@@ -45,10 +46,17 @@ export class AliensDetailComponent {
     );
   }
 
+  saveComment(alienId: string, name: string, comment: string) {
+    this.commentsService.saveComment(alienId, name, comment).subscribe(() => {
+      this.getComments(this.id);
+      this.newComment = '';
+    });
+  }
+
   getComments(id: string) {
     this.commentsService.getCommentsByAlien(id).subscribe(
       (data: any) => {
-        console.log(data)
+        console.log(data);
         this.comments = data;
       },
       (error) => {
@@ -58,8 +66,8 @@ export class AliensDetailComponent {
   }
 
   commentReaction(id: string, type: string) {
-    this.commentsService.saveCommentReaction(id, type).subscribe(
-      () => this.getComments(this.id)
-    );
+    this.commentsService
+      .saveCommentReaction(id, type)
+      .subscribe(() => this.getComments(this.id));
   }
 }

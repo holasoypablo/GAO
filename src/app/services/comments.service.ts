@@ -15,6 +15,12 @@ export class CommentsService {
     return this.http.get(url);
   }
 
+  saveComment(alienId: string, userName: string, comment: string) {
+    const url = `${this.apiUrl}addComment/${alienId}`;
+    const commentDto = { userId: userName, comment: comment };
+    return this.http.post(url, commentDto);
+  }
+
   saveCommentReaction(id: string, type: string): Observable<any> {
     const url = `${this.apiUrl}commentReaction/${id}`;
     const reactionDto = { type: type };
