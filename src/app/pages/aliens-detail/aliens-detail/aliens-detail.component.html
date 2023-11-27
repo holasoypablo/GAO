@@ -1,97 +1,122 @@
 <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mt-3">
-        <h3 class="text-success">{{alien.name}}</h3>
-      </div>
+  <div class="row">
+    <div class="col-12 text-center mt-3">
+      <h3 class="text-success">{{alien.name}}</h3>
     </div>
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6">
-        <img src="{{alien.image}}" class="img-fluid" />
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="row ">
-          <div class="col-4 text-center">
-            <div class="card bg-success">
-              <div class="card-body">
-                <h4 class="text-white">Fortalezas</h4>
-              </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <img src="{{alien.image}}" class="img-fluid" />
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="row ">
+        <div class="col-4 text-center">
+          <div class="card bg-success">
+            <div class="card-body">
+              <h4 class="text-white">Fortalezas</h4>
             </div>
-          </div>
-          <div class="col-8">
-            <p class="text-white">
-                {{alien.strengths}}
-            </p>
           </div>
         </div>
-        <div class="row mb-4">
-          <div class="col-4 text-center">
-            <div class="card bg-success">
-              <div class="card-body">
-                <h4 class="text-white">debilidades</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-8">
-            <p class="text-white">
-                {{alien.weakness}}
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4 text-center">
-            <div class="card bg-success">
-              <div class="card-body">
-                <h4 class="text-white">estadisticas</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-8">
-            <p class="text-white">
-              Numero de transformaciones: {{alien.use}}<br />
-            </p>
-          </div>
+        <div class="col-8">
+          <p class="text-white">
+            {{alien.strengths}}
+          </p>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center mt-3">
-        <h3 class="text-success">comentarios</h3>
-      </div>
-    </div>
-    <div class="row justify-content-center mt-3">
-      <div class="col-2 text-center mb-auto">
-        <h6 class="text-white"><a href="#" class="btn" style="color:white;"><span class="fa fa-user fa-lg"></span></a><br />David Antonio</h6>
-      </div>
-      <div class="col-8">
-        <form>
-          <div class="form-group">
-            <div class="col-12">
-              <textarea class="form-control" id="feedback" name="feedback" rows="3" placeholder="OMG increible tranformacion y salvada del mundo, gracias ben" readonly></textarea>
+      <div class="row mb-4">
+        <div class="col-4 text-center">
+          <div class="card bg-success">
+            <div class="card-body">
+              <h4 class="text-white">debilidades</h4>
             </div>
           </div>
-        </form>
+        </div>
+        <div class="col-8">
+          <p class="text-white">
+            {{alien.weakness}}
+          </p>
+        </div>
       </div>
-      <div class="col-2">
-        <h6><a href="#" class="btn" style="color:lawngreen;"><span class="fa fa-thumbs-up fa-lg"></span></a></h6>
-        <h6><a href="#" class="btn" style="color:white;"><span class="fa fa-thumbs-down fa-lg"></span></a></h6>
-      </div>
-    </div>
-    <div class="row justify-content-center mt-3 mb-3">
-      <div class="col-2 text-center mb-auto">
-        <h6 class="text-white"><a href="#" class="btn" style="color:white;"><span class="fa fa-user fa-lg"></span></a><br />Pablo Buitrago</h6>
-      </div>
-      <div class="col-8">
-        <form>
-          <div class="form-group">
-            <div class="col-12">
-              <textarea class="form-control" id="feedback" name="feedback" rows="3" placeholder="Se supone que es el mas fuerte y nunca es capaz de salvar el dia, pesima actuación" readonly></textarea>
+      <div class="row">
+        <div class="col-4 text-center">
+          <div class="card bg-success">
+            <div class="card-body">
+              <h4 class="text-white">estadisticas</h4>
             </div>
           </div>
-        </form>
-      </div>
-      <div class="col-2">
-        <h6><a href="#" class="btn" style="color:white;"><span class="fa fa-thumbs-up fa-lg"></span></a></h6>
-        <h6><a href="#" class="btn" style="color:red;"><span class="fa fa-thumbs-down fa-lg"></span></a></h6>
+        </div>
+        <div class="col-8">
+          <p class="text-white">
+            Numero de transformaciones: {{alien.use}}<br />
+          </p>
+        </div>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 text-center mt-3">
+      <h3 class="text-success">comentarios</h3>
+    </div>
+  </div>
+  <div></div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-2 text-center mb-auto">
+      <h6 class="text-white">
+        <a href="#" class="btn" style="color:white;">
+          <span class="fa fa-user fa-lg"></span>
+        </a><br />
+        Nombre Usuario
+      </h6>
+    </div>
+    <div class="col-8">
+      <form>
+        <div class="form-group">
+          <div class="col-12">
+            <textarea class="form-control" id="newComment" name="newComment" rows="3"
+              placeholder="Escribe tu comentario..." [(ngModel)]="newComment"></textarea>
+          </div>
+        </div>
+        <div class="col-12 text-right">
+          <button class="btn btn-primary">Publicar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div *ngFor="let comment of comments" class="row justify-content-center mt-3">
+    <div class="col-2 text-center mb-auto">
+      <h6 class="text-white">
+        <a href="#" class="btn" style="color:white;">
+          <span class="fa fa-user fa-lg"></span>
+        </a><br />
+        {{ comment.userName }}
+      </h6>
+    </div>
+    <div class="col-8">
+      <form>
+        <div class="form-group">
+          <div class="col-12">
+            <textarea class="form-control" id="feedback" name="feedback" rows="3" [placeholder]="comment.comment"
+              readonly></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-4 d-flex">
+      <div class="text-right m-1">
+        <button class="btn btn-primary" style="color:lawngreen;" (click)="commentReaction(comment._id, 'like')">
+          <span class="fa fa-thumbs-up"></span> Me gusta {{ comment.likes }}
+        </button>
+      </div>
+      <div class="text-right m-1">
+        <button class="btn btn-primary" style="color:white;" (click)="commentReaction(comment._id, 'dislike')">
+          <span class="fa fa-thumbs-down"></span> No me gusta {{ comment.dislikes }}
+        </button>
+      </div>
+      <div class="text-right m-1">
+        <button class="btn btn-primary" style="color:red;" (click)="commentReaction(comment._id, 'report')">
+          <span class="fa fa-flag"></span> Reportar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

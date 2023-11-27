@@ -1,36 +1,65 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AliensService } from 'src/app/services/aliens.service';
+import { CommentsService } from 'src/app/services/comments.service';
+import { Comment } from '../../aliens/models/comment.model';
 
 @Component({
   selector: 'app-aliens-detail',
   templateUrl: './aliens-detail.component.html',
-  styleUrls: ['./aliens-detail.component.scss']
+  styleUrls: ['./aliens-detail.component.scss'],
 })
 export class AliensDetailComponent {
+  constructor(
+    private route: ActivatedRoute,
+    private aliensService: AliensService,
+    private commentsService: CommentsService,
+  ) {}
 
-  constructor(private route: ActivatedRoute,
-              private aliensService: AliensService) { }
-  
-  alien : any;
+  alien: any;
+  comments: Comment[] = [];
+  newComment = '';
+  id: string = '';
+
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
+    this.id = this.route.snapshot.paramMap.get('id') || '';
 
-    if (id !== null) {
-      this.getAlien(id);
+
+    if (this.id !== null) {
+      this.getAlien(this.id);
+      this.getComments(this.id);
     } else {
       console.error('ID del alien es nulo.');
     }
   }
 
-  getAlien(id: string){
+  getAlien(id: string) {
     this.aliensService.getAlien(id).subscribe(
       (data: any) => {
+        console.log(data)
         this.alien = data;
       },
       (error) => {
         console.error('Error al obtener la lista de aliens:', error);
       }
+    );
+  }
+
+  getComments(id: string) {
+    this.commentsService.getCommentsByAlien(id).subscribe(
+      (data: any) => {
+        console.log(data)
+        this.comments = data;
+      },
+      (error) => {
+        console.error('Error al obtener los comentarios de un alien:', error);
+      }
+    );
+  }
+
+  commentReaction(id: string, type: string) {
+    this.commentsService.saveCommentReaction(id, type).subscribe(
+      () => this.getComments(this.id)
     );
   }
 }
