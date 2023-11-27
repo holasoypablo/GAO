@@ -3,30 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SecurityModule } from './security/security.module';
-import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
-import { ROOT_REDUCERS } from './app.state';
+import { AliensComponent } from './pages/aliens/aliens/aliens.component';
+import { AliensDetailComponent } from './pages/aliens-detail/aliens-detail/aliens-detail.component';
+import { LoginComponent } from './pages/login/login/login.component';
+import { RegisterComponent } from './pages/register/register/register.component';
+import { FooterComponent } from './components/footer/footer/footer.component';
+import { HeaderComponent } from './components/header/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-import { AliensListComponent } from './modules/aliens/components/aliens-list/aliens-list.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AliensListComponent
+    AliensComponent,
+    AliensDetailComponent,
+    LoginComponent,
+    RegisterComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
-    SecurityModule,
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(ROOT_REDUCERS),
-    EffectsModule.forRoot([]),
     HttpClientModule,
-    CommonModule,
-    BrowserModule
-    
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

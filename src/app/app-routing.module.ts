@@ -1,20 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignupComponent } from './security/components/signup/signup.component';
+import { AliensComponent } from './pages/aliens/aliens/aliens.component';
+import { AliensDetailComponent } from './pages/aliens-detail/aliens-detail/aliens-detail.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () =>
-      import('./security/security.module').then((module) => module.SecurityModule)
-  },
-  {
-    path: 'gao',
-    loadChildren: () =>
-      import('./modules/modules.module').then((module) => module.ModulesModule)
-  },
-  { path: '**', redirectTo: '' },
-  {path:'register', component: SignupComponent},
+  { path: '**', redirectTo: ''},
+  { path: '', component: AliensComponent },
+  { path: 'alien', component: AliensComponent },
+  { path: 'alien/:id', component: AliensDetailComponent },
+  
 ];
 
 @NgModule({
