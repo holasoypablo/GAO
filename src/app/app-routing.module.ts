@@ -4,11 +4,10 @@ import { AliensComponent } from './pages/aliens/aliens/aliens.component';
 import { AliensDetailComponent } from './pages/aliens-detail/aliens-detail/aliens-detail.component';
 
 const routes: Routes = [
-  { path: '**', redirectTo: ''},
   { path: '', component: AliensComponent },
   { path: 'alien', component: AliensComponent },
   { path: 'alien/:id', component: AliensDetailComponent },
-  
+  { path: '**', redirectTo: ''},
 ];
 
 @NgModule({
